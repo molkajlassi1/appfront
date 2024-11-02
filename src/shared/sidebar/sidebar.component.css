@@ -1,0 +1,77 @@
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  padding: 58px 0 0; /* Height of navbar */
+  width: 240px;
+  z-index: 600;
+  background-color: #f7f7f7d5; /* Soft grey background */
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.05), 0 2px 10px 0 rgba(0, 0, 0, 0.05);
+}
+
+@media (max-width: 991.98px) {
+  .sidebar {
+    width: 100%;
+  }
+}
+
+.sidebar .list-group-item {
+  border: none;
+  color: #333;
+  font-weight: 500;
+  border-radius: 5px;
+  transition: background-color 0.2s;
+}
+
+.sidebar .list-group-item:hover {
+  background-color: #eaeaea; /* Light grey hover effect */
+  color: #007bff; /* Optional: Blue text on hover */
+}
+
+.sidebar .active {
+  background-color: #e0e0e0; /* Slightly darker grey for active */
+  color: #007bff;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+/* Sidebar image styling */
+img {
+  width: 30px; /* Adjust width as needed */
+  height: auto; /* Maintains aspect ratio */
+  max-height: 100px; /* Sets a maximum height */
+  margin-bottom: 20px; /* Optional: Adds some spacing below the image */
+}
+.navbar-brand {
+  padding: 8px 16px;
+  background-color: #f0f0f0; /* Soft grey background */
+  border-radius: 12px;
+  display: inline-flex;
+  align-items: center;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15); /* Light shadow effect */
+}
+/* Logo styling */
+.navbar-logo {
+  width: auto; /* Adjust width as needed, or remove this line */
+  height: 40px; /* Set a fixed height for the logo */
+  margin-right: 10px; /* Space between logo and text */
+  margin-bottom: 15px; /* Space below the logo */
+  border-radius: 8px; /* Optional: Rounded edges */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+/* Add space above the first sidebar item */
+.list-group-item:first-child {
+  padding-top: 20px; /* Ensure there is space above the first item */
+}
+
+
+
+/* Text styling */
+.navbar-text {
+  font-size: 1.5rem; /* Increase font size */
+  font-weight: bold;
+  color: #4a4a4a; /* Soft dark gray for the text */
+  font-family: 'Arial', sans-serif; /* Choose a suitable font */
+  letter-spacing: 0.5px; /* Slight spacing for readability */
+}

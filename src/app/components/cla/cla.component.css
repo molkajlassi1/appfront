@@ -1,0 +1,18 @@
+.container {
+    display: flex;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.app-sidebar {
+    /* Define width of the sidebar */
+    width: 250px;
+}
+
+.content {
+    /* Allow content to take up remaining space */
+    flex: 1;
+}
